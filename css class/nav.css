@@ -1,0 +1,125 @@
+body {
+    counter-reset: section;
+  }
+  
+  h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    float: left;
+    display: block;
+    padding: 20px;
+    background-color: #dddddd;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #7c3333;
+    color: white;
+  }
+
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 5rem;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .flex-container {
+    display: flex;
+    /* Optional: Specify the direction of the flex container */
+    flex-direction: row; /* or column, row-reverse, column-reverse */
+    /* Optional: Align items horizontally (main-axis) */
+    justify-content: center; /* flex-start, flex-end, space-between, space-around, space-evenly */
+    /* Optional: Align items vertically (cross-axis) */
+    align-items: center; /* flex-start, flex-end, center, baseline, stretch */
+    /* Optional: Add space between flex items */
+    gap: 20px;
+    /* Optional: Set a fixed height for the container */
+    height: 300px;
+    border-radius: 10rem;
+}
+
+.flex-item {
+    /* Optional: Set flex-grow, flex-shrink, and flex-basis */
+    flex: 1; /* This makes all items in the container equally sized */
+    /* Optional: Add some styling to the items */
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+     height: auto;
+}
+#home {
+    width: 46px;
+    height: 44px;
+    background: url(img_navsprites.gif) 0 0;
+  }
